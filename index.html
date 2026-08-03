@@ -431,6 +431,7 @@
     .cert-icon   { font-size: 20px; }
     .cert-name   { font-size: 13px; color: var(--text); font-weight: 500; }
     .cert-issuer { font-family: var(--mono); font-size: 10px; color: var(--text3); margin-top: 3px; }
+    .cert-link { display: flex; align-items: center; gap: 14px; width: 100%; text-decoration: none; color: inherit; }
 
     /* Contact */
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 13px; margin-bottom: 20px; }
@@ -483,7 +484,7 @@
 <!-- Mobile Top Bar -->
 <header class="mobile-topbar">
   <div class="mobile-logo">RBJ / portfolio</div>
-  <a href="resume.pdf" download="Rayyan_Resume.pdf" class="resume-btn" style="font-size:10px;padding:4px 10px;">
+  <a href="rayyan_Resume-Data.pdf" download="Rayyan_Resume.pdf" class="resume-btn" style="font-size:10px;padding:4px 10px;">
     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
     résumé
   </a>
@@ -546,14 +547,13 @@
       </div>
     </nav>
 
-    <a href="//resume.pdf" download="Rayyan_Resume.pdf" class="resume-btn" style="margin-left:auto;">
+    <a href="rayyan_Resume-Data.pdf" download="Rayyan_Resume.pdf" class="resume-btn" style="margin-left:auto;">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       résumé
     </a>
    </div>
   </aside>
 
-  <!-- Main -->
   <main class="main">
 
     <!-- ═══ ABOUT ═══ -->
@@ -562,7 +562,7 @@
         <div class="section-eyebrow">// hello world</div>
         <div class="hero-profile-row">
           <div class="hero-avatar" id="heroAvatar">
-            <img src="/static/profile.jpg" alt="Rayyan" onerror="this.style.display='none';document.getElementById('heroAvatarFallback').style.display='flex';" />
+            <img src="static/profile.jpg" alt="Rayyan" onerror="this.style.display='none';document.getElementById('heroAvatarFallback').style.display='flex';" />
             <span class="hero-avatar-text" id="heroAvatarFallback" style="display:none;">R</span>
           </div>
           <div class="hero-title-wrap">
@@ -814,6 +814,17 @@
         <h1 class="section-title">Education<span class="hl">.</span></h1>
         <p class="section-sub">Degrees, institutions, and certifications.</p>
       </div>
+      <div class="sub-eyebrow">// certifications</div>
+      <div class="cert-card">
+        <a href="https://www.credly.com/badges/789774d5-dff9-4b85-9151-991adfae6aad" target="_blank" class="cert-link">
+          <div class="cert-icon">🎓</div>
+          <div>
+            <div class="cert-name">AWS Certified AI Practitioner AIF-C01</div>
+            <div class="cert-issuer">Amazon Web Services</div>
+          </div>
+        </a>
+      </div>
+      <div class="sub-eyebrow">// education</div>
       <div class="edu-list">
         <div class="edu-card">
           <div>
@@ -838,14 +849,6 @@
             <div class="edu-loc">📍 Hyderabad</div>
           </div>
           <div class="edu-year">2019 – 2020</div>
-        </div>
-      </div>
-      <div class="sub-eyebrow">// certifications</div>
-      <div class="cert-card">
-        <div class="cert-icon">🎓</div>
-        <div>
-          <div class="cert-name">Complete Data Science, Machine Learning, Deep Learning, NLP</div>
-          <div class="cert-issuer">Issued by Udemy</div>
         </div>
       </div>
     </section>
